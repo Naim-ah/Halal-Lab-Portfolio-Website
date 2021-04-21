@@ -1,0 +1,272 @@
+
+/* ==================global css start========== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    font-family: 'Barlow Condensed', sans-serif;
+}
+
+.section-padding{
+    padding: 100px 0 0 100px;
+}
+img{
+    max-width: 100%;
+}
+
+
+/* ==================global css end========== */
+
+
+/* ===========navBar start========== */
+
+#toggle{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 16px;
+    position:relative;
+    cursor: pointer;
+}
+
+#toggle .line{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background: #0BBC5C;
+    margin-bottom: 8px;
+}
+#toggle .line:nth-child(2){
+    width: 22px;
+}
+#toggle .line:nth-child(3){
+    margin-bottom: 0;
+}
+.navbar-brand{
+    font-size: 32px;
+    font-weight: 500;
+}
+/* .navbar-nav .nav-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+li.nav-item a {
+    font-size: 26px;
+    font-weight: 500;
+    display: inline-block;
+    color: #3A4554 !important;
+    
+}
+.navbar-nav .nav-item .round{
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #3A4554;
+    margin: 0 10px;
+    display: inline-block;
+}
+
+/* ===========navBar end========== */
+
+/* ===================main item start======= */
+.main-items{
+    padding-top: 150px;
+}
+.main-content h1 {
+    font-size: 130px;
+    font-weight: 600;
+    margin-left: 40px;
+    line-height: 140px;
+    color: #1A2634;
+    margin-bottom: 100px;
+}
+.main-content .main-sm-text {
+    font-size: 30px;
+    font-weight: 500;
+    color: #1A2634;
+}
+.header-content-num {
+    font-size: 30px;
+    display: inline-block;
+    color: #1A2634;
+    line-height: 0.7;
+}
+.scroll-down {
+    cursor: pointer;
+    padding-top: 100px;
+}
+/* ===================main item end======= */
+
+
+/* ============================project section start======== */
+.section-content{
+    display: flex;
+}
+.section-title-text {
+    font-size: 140px;
+    line-height: 140px;
+    margin-left: 40px;
+    font-weight: 600;
+    margin-bottom: 150px;
+}
+.section-num {
+    font-size: 26px;
+}
+
+.project-item-title h2 {
+    color: #3A4554;
+    font-size: 42px;
+    font-weight: 500;
+}
+.project-item-title h2 span {
+    font-size: 18px;
+    color: #8392A5;
+    margin-left: 10px;
+}
+.project-item {
+    margin-bottom: 100px;
+}
+.project-item-title{
+    margin-top: 40px;
+}
+
+.round-box {
+    background: #0BBC5C;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    padding: 15px;
+    margin-top: 150px;
+}
+/* ============================project section end======== */
+
+
+/* ==============process section start===================== */
+.process-item {
+    margin-bottom: 40px;
+}
+.round-item{
+    width: 8px;
+    height: 8px;
+    border-radius:50%;
+    background:#3A4554;
+}
+.process-img {
+    position: relative;
+}
+.process-img-footer {
+    position: absolute;
+    bottom: 10px;
+    right: 20%;
+}
+.process-footer-text{
+    right: 10% !important;
+}
+/* ==============process section end===================== */
+
+
+/* ======================clients feedback section start==== */
+.client-header-text h5 {
+    font-size: 22px;
+    color: #1A2634;
+    font-weight: 400;
+}
+.client-body-text {
+    max-width: 355px;
+    height: 350px;
+}
+.client-body-text p {
+    font-size: 22px;
+    color: #1A2634;
+    font-weight: 400;
+}
+
+.client-footer-text h5 {
+    color: #1A2634;
+    font-size: 22px;
+    font-weight: 500;
+    margin-bottom: 100px;
+}
+
+/* ====owl carousel=== */
+
+.owl-nav {
+    display: none;
+}
+.owl-dots {
+    display: flex;
+}
+.owl-carousel button.owl-dot {
+    width:100%;
+    height: 3px;
+    background: #C0CCDA;
+}
+.owl-carousel button.owl-dot.active {
+    width: 550px;
+    height: 3px;
+    background: #1A2634;
+}
+
+/* ====owl carousel=== */
+
+/* ======================clients feedback section end==== */
+
+/* ======================work with section start==== */
+.work-with-item {
+    background: #C0CCDA;
+    width: 400px;
+    height: 200px;
+    margin: 7px;
+}
+/* ======================work with section end==== */
+
+/* =================contact items start========= */
+.contact{
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.contact-item {
+    margin-bottom: 70px;
+}
+.contact-item h5 {
+    font-size: 20px;
+    color: #5C6877;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+.social-links a {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 28px;
+    color: #1A2634;
+    font-weight: 400;
+    text-decoration: none;
+}
+.address-text p {
+    margin-bottom: 5px;
+    font-size: 28px;
+    color: #1A2634;
+    font-weight: 400;
+}
+.email p {
+    font-size: 28px;
+    color: #1A2634;
+    font-weight: 400;
+}
+/* =================contact items end========= */
+
+/* =======copyright text==== */
+.copyright-text{
+    border-top: 1px solid #1A2634;
+}
+.copyright-left-text,.privacy-text,.tearm-condition-text p{
+    color: #8392A5;
+}
