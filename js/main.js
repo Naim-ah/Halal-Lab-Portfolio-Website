@@ -1,3 +1,9 @@
+
+new WOW().init();
+
+
+
+
 $('.clients-carousel').owlCarousel({
     loop:true,
     margin:10,
