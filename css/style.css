@@ -13,59 +13,66 @@ html{
 body{
     font-family: 'Barlow Condensed', sans-serif;
     /* font-family: 'Do Hyeon', sans-serif; */
-    cursor: none;
     overflow-x: hidden;
 }
 
 .section-padding{
-    padding: 100px 0 0 100px;
+    padding: 100px 0 ;
 }
 img{
     max-width: 100%;
 }
-
-.cursor{
-    position: fixed;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    border:1px solid #1A2634;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    z-index: 999;
-    transition: 0.1s;
-    mix-blend-mode: difference;
-    transition-property: background,transform;
-}
-.cursor2{
-    position: fixed;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background-color: #0BBC5C;
-    transform: translate(-50%,-50%);
-    pointer-events: none;
-    z-index: 999;
-    transition: 0.2s;
-    transition-property: background,transform;
-    mix-blend-mode: difference;
+.container-fluid{
+    padding-left: 70px;
+    padding-right: 70px;
 }
 
-.link-grow{
-    transform: scale(3);
-    background: #1A2634;
+
+@keyframes scrollAnimated{
+    0%{
+        transform:rotate(0deg);
+    }
+    100%{
+        transform:rotate(360deg);
+    }
 }
-.hovered-link{
-    color: #fff !important;
+
+@keyframes arrow-animate {
+    0%{
+        transform: translateY(0);
+    }
+    100%{
+        transform: translateY(-10px);
+    }
 }
-.content-grow{
-    transform: scale(8);
-    background: #1A2634;
-}
-.hovered-content{
-    color: #fff !important;
-}
+
 /* ==================global css end========== */
+
+/* =====text scroll start=== */
+.scroll,.scroll2,.scroll3,.scroll4,.section-content,.project-item-title{
+    opacity: 0; 
+    position: relative;
+    bottom: -40px;
+    transition: all 0.8s ease-out;
+    display: inline-block;
+}
+.scroll{
+    transition-delay: 0.1s;
+}
+.scroll2{
+    transition-delay: 0.2s;
+}
+.scroll3{
+    transition-delay: 0.3s;
+}
+.scroll{
+    transition-delay: 0.4s;
+}
+.show {
+    opacity: 1;
+    bottom: 0;
+}
+/* =====text scroll end=== */
 
 
 /* ===========navBar start========== */
@@ -99,11 +106,7 @@ img{
     font-size: 32px;
     font-weight: 500;
 }
-/* .navbar-nav .nav-item{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-} */
+
 li.nav-item a {
     font-size: 26px;
     font-weight: 500;
@@ -128,17 +131,23 @@ li.nav-item .hovered-link{
 /* ===========navBar end========== */
 
 /* ===================main item start======= */
+
+
 .main-items{
     padding-top: 150px;
 }
 .main-content h1 {
-    font-size: 130px;
+    font-size: 140px;
     font-weight: 600;
     margin-left: 40px;
-    line-height: 140px;
+    line-height: 150px;
     color: #1A2634;
     margin-bottom: 100px;
+    text-transform: uppercase;
+    letter-spacing: -1px;
 }
+
+
 .main-content .main-sm-text {
     font-size: 30px;
     font-weight: 500;
@@ -156,15 +165,38 @@ li.nav-item .hovered-link{
 .scroll-down {
     cursor: pointer;
     padding-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.header-scroll-arrow{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
 
 .main-image{
     transition: 0.5s;
     overflow: hidden;
 }
-.main-image img:hover{
-    transform: scale(1.3);
+.main-image img{
+    width: 100%;
 }
+.scroll-down .scroll-animate{
+    display: inline-block;
+    animation: scrollAnimated 10s linear infinite;
+}
+.scroll-down .arrow-animate{
+    animation: arrow-animate 1s linear infinite alternate;
+}
+
+
 /* ===================main item end======= */
 
 
@@ -352,7 +384,6 @@ li.nav-item .hovered-link{
 /* =================contact items start========= */
 .contact{
     padding-top: 100px;
-    padding-left: 100px;
 }
 .contact-arrow{
     margin-left: 35px;
