@@ -64,16 +64,28 @@ function setup() {
     const scroll4 = document.querySelector('.scroll4');
     observer.observe(scroll4);
 
+    const mainImg = document.querySelector('.main-image');
+    observer.observe(mainImg);
+
+    const processScroll = document.querySelectorAll('.process-scroll');
+    processScroll.forEach(processScroll => observer.observe(processScroll));
+
     const sectionContent = document.querySelectorAll('.section-content');
     sectionContent.forEach(secContentItem => observer.observe(secContentItem));
 
     const projectItemTitle = document.querySelectorAll('.project-item-title');
     projectItemTitle.forEach(item => observer.observe(item));
 
+    const projectItem = document.querySelectorAll('.scroll-project-animate');
+    projectItem.forEach(projectImg => observer.observe(projectImg));
+
+    // const processItem = document.querySelectorAll('.process-scroll');
+    // processItem.forEach(process => observer.observe(process));
+
 }
 
 // wow js=======
-// new WOW().init();
+new WOW().init();
 
 
 
