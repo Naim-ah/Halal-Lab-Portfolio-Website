@@ -15,9 +15,7 @@ body{
     /* font-family: 'Do Hyeon', sans-serif; */
     overflow-x: hidden;
 }
-.padd-left{
-    padding-left: 63px;
-}
+
 .section-padding{
     padding: 100px 0 ;
 }
@@ -192,7 +190,7 @@ img{
 
 /* ===========navBar start========== */
 
-#toggle{
+/* #toggle{
     width: 50px;
     height: 50px;
     display: flex;
@@ -216,7 +214,7 @@ img{
 }
 #toggle .line:nth-child(3){
     margin-bottom: 0;
-}
+} */
 .navbar-brand{
     font-size: 32px;
     font-weight: 500;
@@ -254,7 +252,7 @@ li.nav-item .hovered-link{
     padding-top: 150px;
 }
 .main-content h1 {
-    font-size: 140px;
+    font-size: 150px;
     font-weight: 600;
     margin-left: 30px;
     line-height: 150px;
@@ -298,7 +296,6 @@ li.nav-item .hovered-link{
     height: 100%;
 }
 .header-scroll-arrow img{
-    width: 50px;
     height: 35px;
 }
 
@@ -329,15 +326,14 @@ li.nav-item .hovered-link{
 .section-title-text {
     font-size: 140px;
     line-height: 140px;
-    margin-left: 30px;
     font-weight: 600;
     margin-bottom: 150px;
 }
-.section-num {
+/* .section-num {
     font-size: 26px;
     font-family: 'Do Hyeon', sans-serif;
     color: #8392A5;
-}
+} */
 
 .project-item-title h2 {
     color: #3A4554;
@@ -501,7 +497,6 @@ li.nav-item .hovered-link{
 /* ======================work with section start==== */
 .work-with-item {
     background: #C0CCDA;
-    width: 400px;
     height: 200px;
     margin: 7px;
 }
@@ -571,3 +566,84 @@ li.nav-item .hovered-link{
 .copyright-left-text,.privacy-text,.tearm-condition-text p{
     color: #8392A5;
 }
+
+
+
+
+
+
+/* ========================================about css style start======================= */
+/* ======about global css===== */
+.about-left-padd{
+    padding-left: 70px;
+}
+/* ======about global css===== */
+.about-content {
+    margin-bottom: 60px;
+}
+.about-content p{
+    font-size: 26px;
+    font-weight:400;
+    color: #1A2634;
+    margin: 0;
+}
+.about-content h1{
+    font-size: 140px;
+    font-weight: 600;
+    word-spacing: 15px;
+}
+.about-content h1 a {
+    font-size: 26px;
+    color: #0BBC5C;
+    font-weight: 500;
+    text-decoration: none;
+    word-spacing: 1px;
+}
+.about-header-sm-content{
+    margin-bottom: 130px;
+}
+.about-header-sm-text p{
+    font-weight: 400;
+    font-size: 20px;
+    color: #5C6877;
+}
+.about-header-sm-text small{
+    font-weight: 500;
+    font-size: 26px;
+    color: #3A4554;
+}
+
+/* ----project details start-- */
+.about-title-sm-text small{
+    font-size:26px;
+    font-weight: 400;
+    color: #8392A5;
+    margin-right: 40px;
+}
+.about-section-title h4{
+    font-size:42px;
+    font-weight: 600;
+    color: #1A2634;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+.about-section-title p {
+    max-width: 950px;
+    font-size: 26px;
+    font-weight: 400;
+    margin: 0;
+}
+/* ----project details end-- */
+
+/* project item start */
+.project-items {
+    margin-left: 65px;
+}
+.project-items .project-web-first{
+    margin: 100px 0;
+}
+.project-items .project-item-img img{
+    width:100%;
+}
+/* project item end */
+/* ========================================about css style end======================= */
